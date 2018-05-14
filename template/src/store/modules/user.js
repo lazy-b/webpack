@@ -4,7 +4,7 @@
  * File Created: 2018-05-14 2:50:48 pm
  * Author: xiongyang (yang.xiong@meicloud.com)
  * -----
- * Last Modified: 2018-05-14 3:01:02 pm
+ * Last Modified: 2018-05-14 7:34:48 pm
  * Modified By: xiongyang (yang.xiong@meicloud.com>) (<<git>>)
  * -----
  * Copyright © 2018 - MeiCloud, MeiCloud
@@ -15,7 +15,6 @@ import {
   USER_SET_USER_INFO,
   USER_SET_MENU,
 } from '../mutation-types';
-
 
 // 状态
 const state = {

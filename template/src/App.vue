@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     {{#router}}
-    <router-view/>
+    <router-view></router-view>
     {{else}}
-    <HelloWorld/>
+    <HelloWorld></HelloWorld>
     {{/router}}
   </div>
 </template>
@@ -19,7 +18,7 @@ export default {
   components: {
     HelloWorld
   }{{/router}}
-}
+};
 </script>
 
 <style>

@@ -32,6 +32,19 @@ module.exports = {
     template_version() {
       return templateVersion
     },
+    date() {
+      const _date = new Date();
+      const _y = _date.getFullYear();
+      const _m = _date.getMonth() + 1;
+      const _d = _date.getDate();
+      const _h = _date.getHours();
+      const _i = _date.getMinutes();
+      const _s = _date.getSeconds();
+      const _a = _date.getDay();
+      const _dateString = `${_y}-${_m}-${_d} ${_h}:${_i}:${_s}` +
+                          (_h > 12) ? 'pm' : 'am';
+      return _dateString;
+    },
   },
 
   prompts: {

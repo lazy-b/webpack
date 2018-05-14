@@ -16,7 +16,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/' + {{name}} + '/',
+    assetsPublicPath: '/{{name}}-web/',
     proxyTable: devEnv.PROXY_TABLE,
 
     // Various Dev Server settings
