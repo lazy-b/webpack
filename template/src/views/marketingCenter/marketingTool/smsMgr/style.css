@@ -1,0 +1,467 @@
+/* 变量定义 */
+/* 函数定义 */
+.mixin-center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.pt40 {
+  padding-top: 40px;
+}
+.pl40 {
+  padding-left: 40px;
+}
+.pb40 {
+  padding-bottom: 40px;
+}
+.pr40 {
+  padding-right: 40px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.pt30 {
+  padding-top: 30px;
+}
+.pl30 {
+  padding-left: 30px;
+}
+.pb30 {
+  padding-bottom: 30px;
+}
+.pr30 {
+  padding-right: 30px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.mt0 {
+  margin-top: 0px;
+}
+.ml0 {
+  margin-left: 0px;
+}
+.mb0 {
+  margin-bottom: 0px;
+}
+.mr0 {
+  margin-right: 0px;
+}
+.pt0 {
+  padding-top: 0px;
+}
+.pl0 {
+  padding-left: 0px;
+}
+.pb0 {
+  padding-bottom: 0px;
+}
+.pr0 {
+  padding-right: 0px;
+}
+.pt5 {
+  padding-top: 5px;
+}
+.md-icon {
+  display: inline-block;
+  background-image: url(http://cmms.midea.com/s/platImgs/icons.png);
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *height: 1%;
+}
+.md-icon__user {
+  width: 20px;
+  height: 20px;
+  background-position: -120px 0;
+}
+.md-icon__analysis {
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+}
+.md-icon__content {
+  width: 20px;
+  height: 20px;
+  background-position: -40px 0;
+}
+.md-icon__message {
+  width: 20px;
+  height: 20px;
+  background-position: -60px 0;
+}
+.md-icon__rule {
+  width: 20px;
+  height: 20px;
+  background-position: -60px 0;
+}
+.md-icon__mktool {
+  width: 20px;
+  height: 20px;
+  background-position: -140px 0;
+}
+.md-icon__h5 {
+  width: 20px;
+  height: 20px;
+  background-position: -100px 0;
+}
+.md-icon__activity {
+  width: 20px;
+  height: 20px;
+  background-position: -80px 0;
+}
+.md-icon__auth {
+  width: 20px;
+  height: 20px;
+  background-position: -20px 0;
+}
+.md-icon__auth {
+  width: 20px;
+  height: 20px;
+  background-position: -20px 0;
+}
+.md-icon__greenChannel {
+  width: 20px;
+  height: 20px;
+  background-position: -160px 0;
+}
+.md-icon__baseConfig {
+  width: 20px;
+  height: 20px;
+  background-position: -183px 0;
+}
+.md-relative {
+  position: relative;
+}
+.md-absolute {
+  position: absolute;
+}
+.h2 {
+  font-size: 16px;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.font12 {
+  font-size: 12px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.font-black {
+  color: #121212;
+}
+.font-grey {
+  color: #999;
+}
+.important {
+  color: #e42213;
+}
+.pointer {
+  cursor: pointer;
+}
+.color--success {
+  color: #13CE66;
+}
+.md-isuccess {
+  color: #13CE66;
+  font-size: 26px;
+}
+.md-iinfo {
+  color: #20A0FF;
+  font-size: 26px;
+}
+.bottom-hr {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dbe1e5;
+}
+.empty-note {
+  border: 1px solid #e7e7eb;
+  padding: 15px;
+  text-align: center;
+}
+.pannel__title {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 30px;
+  background: linear-gradient(#eff1f3, #fff);
+  background-color: #f4f6f8;
+  font-size: 14px;
+  color: #121212;
+}
+.pannel__title a {
+  color: #666;
+  cursor: pointer;
+}
+.pannel__title a:hover {
+  text-decoration: underline;
+}
+.pannel__content {
+  padding: 0 30px 20px;
+}
+.pannel__content-nohead {
+  padding: 0 30px;
+}
+.md-search {
+  color: #666;
+}
+.md-search__items {
+  font-size: 0;
+}
+.md-search__inline-item {
+  display: inline-block;
+  padding: 10px 0 0;
+  margin-right: 30px;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.md-search__inline-item > label {
+  color: #121212;
+  display: block;
+  line-height: 1.4285;
+}
+.md-search__line-item {
+  padding: 10px 0 0;
+}
+.md-search__line-item > label {
+  color: #121212;
+  display: block;
+  line-height: 1.4285;
+}
+.md-search span.space {
+  display: inline-block;
+  width: 23px;
+  text-align: center;
+}
+.md-search .item-inputs .el-input {
+  width: auto!important;
+}
+.md-search input[type="text"],
+.md-search input[type="number"],
+.md-search select {
+  width: 180px;
+}
+.md-table {
+  padding: 20px 0;
+}
+.full-form {
+  width: 700px;
+}
+/* webuploader 上传 */
+.webuploader-element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+}
+.block__title {
+  overflow: hidden;
+  font-size: 14px;
+  color: #121212;
+}
+.block__title--mark::before {
+  content: '';
+  border-left: 3px solid #3aa2eb;
+  padding-right: 5px;
+}
+.block__content {
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+.letter-spacing {
+  letter-spacing: 3px;
+}
+table.fix-lay {
+  table-layout: fixed;
+}
+.hide-more {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.scroll-x {
+  overflow-x: scroll;
+}
+.md-btn-jump {
+  height: 28px;
+  width: 40px;
+  margin-left: 6px;
+}
+.el-tabs {
+  width: 100%;
+}
+.css-loading {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+  -webkit-animation: load 3s linear infinite;
+}
+.css-loading div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.css-loading span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #99CC66;
+  position: absolute;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation: changeBgColor 3s ease infinite;
+}
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  33.3% {
+    -webkit-transform: rotate(120deg);
+  }
+  66.6% {
+    -webkit-transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes changeBgColor {
+  0%,
+  100% {
+    background: #99CC66;
+  }
+  33.3% {
+    background: #FFFF66;
+  }
+  66.6% {
+    background: #FF6666;
+  }
+}
+.css-loading div:nth-child(2) {
+  -webkit-transform: rotate(120deg);
+}
+.css-loading div:nth-child(3) {
+  -webkit-transform: rotate(240deg);
+}
+.css-loading div:nth-child(2) span {
+  -webkit-animation-delay: 1s;
+}
+.css-loading div:nth-child(3) span {
+  -webkit-animation-delay: 2s;
+}
+/*自定义checkbox的样式*/
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.dl75 {
+  width: 75% !important;
+}
+.bg-white {
+  background: #fff;
+  border-radius: 6px;
+  padding-top: 15px;
+}

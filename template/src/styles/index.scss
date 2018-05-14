@@ -1,0 +1,251 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+body {
+  height: 100%;
+  color: $--base-color;
+  font-size: $--base-font-size;
+  line-height: $--base-font-line-height;
+  background: $--base-background-color;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft YaHei, Arial, sans-serif;
+  // font-family: PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+// label {
+//   font-weight: 700;
+// }
+
+// .no-padding {
+//   padding: 0px;
+// }
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+}
+
+/*滚动条*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 6px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 6px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+code {
+  background: #eef1f6;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 36px;
+  font-size: 14px;
+  a {
+    color: #337ab7;
+    cursor: pointer;
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+/** ---------------------- SCRM通用样式 --------------------------- */
+
+//main-container全局样式
+.app-container {
+  padding: 20px;
+  background-color: #fff;
+  min-height: 300px;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+  &.draft {
+    background: #d0d0d0;
+  }
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+// .filter-container {
+//   padding-bottom: 10px;
+//   .filter-item {
+//     display: inline-block;
+//     vertical-align: middle;
+//     margin-bottom: 10px;
+//     margin-top: 5px;
+//   }
+//   font-size: $font-xs;
+//   color: $font-blackish;
+//   label{
+//     color: #121212;
+//     display: block;
+//   }
+//   span.space{
+//     display: inline-block;
+//     width: 25px;
+//   }
+//   input[type="text"],
+//   select {
+//     border: 1px solid #C0CCDA;
+//     width: $width-s;
+//     height: $height-s;
+//     border-radius: 4px;
+//     &:focus{
+//       border:$focus-border;
+//     }
+//   }
+// }
+
+/** ---------------------- SCRM简写样式 --------------------------- */
+/** 全局统一样式 */
+.ms-wp10 { width: 10%; }
+.ms-wp20 { width: 20%; }
+.ms-wp30 { width: 30%; }
+.ms-wp40 { width: 40%; }
+.ms-wp50 { width: 50%; }
+.ms-wp60 { width: 60%; }
+.ms-wp70 { width: 70%; }
+.ms-wp100 { width: 100%; }
+.ms-w30 { width: 30px; }
+.ms-w50 { width: 50px; }
+.ms-w100 { width: 100px; }
+.ms-w150 { width: 150px; }
+.ms-w200 { width: 200px; }
+.ms-w300 { width: 300px; }
+.ms-w500 { width: 500px; }
+.ms-h1 { font-size: 24px; font-weight: 700; line-height: 2; }
+.ms-h2 { font-size: 20px; font-weight: 700; line-height: 1.6; }
+.ms-h3 { font-size: 18px; font-weight: 700; line-height: 1.4; }
+.ms-h4 { font-size: 18px; line-height: 1.2; }
+.ms-h5 { font-size: 16px; line-height: 1.1; }
+.ms-btn { font-size: 16px; }
+.ms-btn-t { font-size: 16px; } // 文字按钮
+.ms-btn-s { font-size: 14px; } // 小型按钮
+.ms-btn-m { font-size: 12px; } // 超小型
+.ms-btn-b { font-size: 18px; } // 大型
+.ms-mr5 { margin-right: 5px; }
+.ms-mr10 { margin-right: 10px; }
+.ms-mr20 { margin-right: 20px; }
+.ms-mb5 { margin-bottom: 5px; }
+.ms-mb10 { margin-bottom: 10px; }
+.ms-mb20 { margin-bottom: 20px; }
+.ms-mt5 { margin-top: 5px; }
+.ms-mt10 { margin-top: 10px; }
+//xuxl12 add
+.ms-footer_pagination { // 分页控件位置
+  margin-top: 15px;
+  text-align: right;
+}
+.ms-bg_white{
+background: #fff;
+}
+.ms-relative{
+  position: relative;
+}
+.ms-absolute{
+  position: absolute;
+}
+.ms-mt15 { margin-top: 15px; }
+.ms-mt20 { margin-top: 20px; }
+.ms-mt40 { margin-top: 40px; }
+.ms-ml10{margin-left:10px;}
+.ms-ml20{margin-left:20px;}
+.ms-ml40{margin-left:40px;}
+.ms-mt20{margin-top: 20px;}
+.ms-pl15{padding-left: 15px;}
+.ms-pr15{padding-right: 15px;}
+.ms-pl20{padding-left: 20px;}
+.ms-pb15{padding-bottom: 15px;}
+.ms-fr { float: right; }
+.ms-fl { float: left; }
+.ms-clearfix { &:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } }
+.ms-block { display: block; }
+.ms-pointer { cursor: pointer; }
+.ms-inline-block { display: inline-block; }
+.ms-two-iol { display: inline-block; width: 49%; margin: 5px auto; } // two-item-one-line一行两个输入项
+.ms-sparate-item { &:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; margin-bottom: 40px; } } // 对表单进行分隔
+.ms-cursor-pointer { cursor: pointer; }
+.ms-text-center { text-align: center; }
+.ms-text-left { text-align: left; }
+.ms-text-right { text-align: right; }
+.ms-flex { display: flex; align-items: center; }
+.ms-no-padding { padding: 0; }
+.ms-hidden { display: none; }
+
+
+

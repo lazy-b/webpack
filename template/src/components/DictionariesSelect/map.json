@@ -1,0 +1,27 @@
+{
+  "del_flag": "删除标记",
+  "show_hide": "显示隐藏",
+  "yes_no": "是/否",
+  "color": "颜色值",
+  "theme": "主题方案",
+  "sys_area_type": "区域类型",
+  "sys_office_type": "机构类型",
+  "sys_office_common": "快捷通用部门",
+  "sys_office_grade": "机构等级",
+  "sys_data_scope": "数据范围",
+  "sys_user_type": "用户类型",
+  "cms_theme": "站点主题",
+  "cms_module": "栏目类型",
+  "cms_show_modes": "展现方式",
+  "cms_posid": "推荐位",
+  "cms_guestbook": "留言板分类",
+  "sys_log_type": "日志类型",
+  "gen_category": "代码生成分类",
+  "gen_query_type": "查询方式",
+  "gen_show_type": "字段生成方案",
+  "gen_java_type": "Java类型",
+  "system": "系统参数",
+
+  "----业务数据-----": "------业务数据------",
+  "base_shop_kind": "门店属性"
+}

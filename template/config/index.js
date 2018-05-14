@@ -3,31 +3,36 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+const devEnv = require('./dev.env');
+let env = {};
+// dev环境取不到process.env.env_config，导致编译报错，暂时不能解决，
+// 所以如果该值存在才加载env文件，暂时没有出现问题
+if (process.env.env_config) {
+  env = require('./' + process.env.env_config + '.env')
+}
 
 module.exports = {
   dev: {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
-    proxyTable: {},
+    assetsPublicPath: '/' + {{name}} + '/',
+    proxyTable: devEnv.PROXY_TABLE,
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    port: 9527, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    {{#lint}}// Use Eslint Loader?
     // If true, your code will be linted during bundling and
     // linting errors and warnings will be shown in the console.
     useEslint: true,
     // If true, eslint errors and warnings will also be shown in the error overlay
     // in the browser.
     showEslintErrorsInOverlay: false,
-    {{/lint}}
 
     /**
      * Source Maps
@@ -51,7 +56,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: env.ASSETS_PUBLIC_PATH,
 
     /**
      * Source Maps

@@ -1,0 +1,13 @@
+/** ---------------------- scss变量 ------------------------ */
+// 基础字体
+$--base-font-size: 14px;
+$--base-font-line-height: 1.1;
+// 基础颜色
+$--base-background-color: #f4f6f8;
+$--base-dark-color: #222426; // 深色
+$--base-middle-dark-color: #666666; // 中深色
+$--base-light-dark-color: #999999; // 浅色
+$--base-color: $--base-dark-color; // 全局颜色
+$--base-hover-color: #409EFF; // 文字hover颜色
+$--head-background-color: #fafafa;
+$--common-border-color: #e8e8e8;
