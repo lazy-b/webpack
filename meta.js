@@ -126,8 +126,12 @@ module.exports = {
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
-      message: 'Should we run `npm install` for you after the project has been created? (recommended)',
+      message: 'Should we run `cnpm install` for you after the project has been created? (recommended)',
       choices: [{
+          name: 'Yes, use CNPM',
+          value: 'cnpm',
+          short: 'cnpm',
+        },{
           name: 'Yes, use NPM',
           value: 'npm',
           short: 'npm',
