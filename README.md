@@ -62,5 +62,8 @@ The development server will run on port 8080 by default. If that port is already
 You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
 
 ``` bash
+// origin
 vue init username/repo my-project
+// local
+vue init /(or ./)(*/)template my-project
 ```
