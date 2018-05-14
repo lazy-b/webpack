@@ -11,7 +11,9 @@ const pkg = require('./package.json')
 
 const templateVersion = pkg.version
 
-const { addTestAnswers } = require('./scenarios')
+const {
+  addTestAnswers
+} = require('./scenarios')
 
 module.exports = {
   metalsmith: {
@@ -31,7 +33,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
@@ -55,15 +57,13 @@ module.exports = {
       when: 'isNotTest',
       type: 'list',
       message: 'Vue build',
-      choices: [
-        {
+      choices: [{
           name: 'Runtime + Compiler: recommended for most users',
           value: 'standalone',
           short: 'standalone',
         },
         {
-          name:
-            'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
+          name: 'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
           value: 'runtime',
           short: 'runtime',
         },
@@ -74,33 +74,6 @@ module.exports = {
       type: 'confirm',
       message: 'Install vue-router?',
     },
-    lint: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Use ESLint to lint your code?',
-    },
-    lintConfig: {
-      when: 'isNotTest && lint',
-      type: 'list',
-      message: 'Pick an ESLint preset',
-      choices: [
-        {
-          name: 'Standard (https://github.com/standard/standard)',
-          value: 'standard',
-          short: 'Standard',
-        },
-        {
-          name: 'Airbnb (https://github.com/airbnb/javascript)',
-          value: 'airbnb',
-          short: 'Airbnb',
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
-        },
-      ],
-    },
     unit: {
       when: 'isNotTest',
       type: 'confirm',
@@ -110,8 +83,7 @@ module.exports = {
       when: 'isNotTest && unit',
       type: 'list',
       message: 'Pick a test runner',
-      choices: [
-        {
+      choices: [{
           name: 'Jest',
           value: 'jest',
           short: 'jest',
@@ -136,10 +108,8 @@ module.exports = {
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
-      message:
-        'Should we run `npm install` for you after the project has been created? (recommended)',
-      choices: [
-        {
+      message: 'Should we run `npm install` for you after the project has been created? (recommended)',
+      choices: [{
           name: 'Yes, use NPM',
           value: 'npm',
           short: 'npm',
@@ -158,8 +128,6 @@ module.exports = {
     },
   },
   filters: {
-    '.eslintrc.js': 'lint',
-    '.eslintignore': 'lint',
     'config/test.env.js': 'unit || e2e',
     'build/webpack.test.conf.js': "unit && runner === 'karma'",
     'test/unit/**/*': 'unit',
@@ -171,7 +139,9 @@ module.exports = {
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
   },
-  complete: function(data, { chalk }) {
+  complete: function (data, {
+    chalk
+  }) {
     const green = chalk.green
 
     sortDependencies(data, green)
